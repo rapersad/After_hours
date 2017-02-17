@@ -1,0 +1,7 @@
+<h1> <%= @irkat.name %> </h1>
+
+<p>This irkat is a <%= @irkat.fur %> cub that answers <%= @irkat.likes_ruby %>, and we have <%= @irkat.quantity %> irkats available.</p>
+
+<%= link_to "Edit this irkat!", edit_irkat_path(@irkat) %>
+<%= link_to "Delete this irkat!", irkat_path, method: :delete, data: { confirm: "Are you sure you want to delete this irkat?"} %>
+<%= link_to "Back to the list!", irkats_path %>

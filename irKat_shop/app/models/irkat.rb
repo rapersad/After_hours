@@ -1,0 +1,2 @@
+class Irkat < ApplicationRecord
+end

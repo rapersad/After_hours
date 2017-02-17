@@ -1,0 +1,10 @@
+<h1>Today's Irkats</h1>
+
+<ul>
+    <% @irkats.each do |irkat| %>
+        <li>
+            <strong> <%= irkat.name %> </strong> - <%= irkat.fur %>
+              <%= link_to "More info", irkat_path(irkat) %>
+        </li>
+    <% end %>
+</ul>

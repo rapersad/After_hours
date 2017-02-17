@@ -1,0 +1,29 @@
+<h1>Add a new irkat!</h1>
+
+<%= form_for @irkat do |f| %>
+
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+
+    <div>
+        <%= f.label :fur %>
+        <%= f.text_field :fur %>
+    </div>
+
+    <div>
+        <%= f.label :likes_ruby %>
+        <%= f.check_box :likes_ruby, {}, 'true', 'false' %>
+    </div>
+
+    <div>
+        <%= f.label :quantity %>
+        <%= f.text_field :quantity %>
+    </div>
+
+    <%= f.submit "Add new irkat!" %>
+
+<% end %>
+
+<%= link_to "Back to the list!", irkats_path %>
